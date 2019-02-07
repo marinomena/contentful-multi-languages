@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{=it.entity.fields.title['en-US']}}</title>
+</head>
+<body>
+<h1>{{=it.entity.fields.title['en-US']}}</h1>
+<h2>{{=it.entity.fields.slug['en-US']}}</h2>
+<h2>{{=it.entity.fields.heroImage['en-US']}}</h2>
+<h2>{{=it.entity.fields.description['en-US']}}</h2>
+<h2>{{=it.entity.fields.body['en-US']}}</h2>
+<h2>{{=it.entity.fields.author['en-US']}}</h2>
+<h2>{{=it.entity.fields.publishDate['en-US']}}</h2>
+<h2>{{=it.entity.fields.tags['en-US']}}</h2>
+</body>
+</html>

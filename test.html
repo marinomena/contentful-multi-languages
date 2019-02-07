@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Home</title>
+  <head>
+  <body>
+
+    <script type="text/javascript">
+      const spaceId = 'xxxxxx';
+      const envronmentId = 'xxxxx';
+      const accessToken = 'xxxxxx'
+      const entryId = 'xxxxxx'
+
+      var Http = new XMLHttpRequest();
+
+      var entriesUrl = 'https://cdn.contentful.com/spaces/' + spaceId + '/environments/master/entries?access_token=' + accessToken;
+      Http.open("GET", entriesUrl);
+      Http.send();
+      Http.onreadystatechange= function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var jsonResponse = JSON.parse(this.responseText);
+          console.log(jsonResponse);
+          for(var field in jsonResponse.items[2].fields){
+            console.log(field);
+          }
+        }
+      }
+
+
+
+      Http = new XMLHttpRequest();
+      const url='https://cdn.contentful.com/spaces/' + spaceId + '/environments/master/entries/' + entryId + '?access_token=' + accessToken;
+      Http.open("GET", url);
+      Http.send();
+      Http.onreadystatechange= function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var jsonResponse = JSON.parse(this.responseText);
+          document.getElementById('h1Title').innerHTML = jsonResponse.fields.title
+        }
+      };
+
+    </script>
+    <h1 id='h1Title'></h1>
+  </body>
+</html>

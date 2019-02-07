@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{=it.entity.fields.name[it.language]}}</title>
+</head>
+<body>
+<h1>{{=it.entity.fields.title[it.language]}}</h1>
+<h2>{{=it.entity.fields.name[it.language]}}</h2>
+<h2>{{=it.entity.fields.description[it.language]}}</h2>
+</body>
+</html>

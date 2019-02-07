@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{=it.entity.fields.name['en-US']}}</title>
+</head>
+<body>
+<h1>{{=it.entity.fields.title['en-US']}}</h1>
+<h2>{{=it.entity.fields.company['en-US']}}</h2>
+<h2>{{=it.entity.fields.shortBio['en-US']}}</h2>
+<h2>{{=it.entity.fields.email['en-US']}}</h2>
+<h2>{{=it.entity.fields.phone['en-US']}}</h2>
+<h2>{{=it.entity.fields.facebook['en-US']}}</h2>
+<h2>{{=it.entity.fields.twitter['en-US']}}</h2>
+<h2>{{=it.entity.fields.github['en-US']}}</h2>
+<h2>{{=it.entity.fields.image['en-US']}}</h2>
+</body>
+</html>
